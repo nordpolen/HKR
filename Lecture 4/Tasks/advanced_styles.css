@@ -1,0 +1,45 @@
+html *
+{
+   font-size: 1em;
+   color: #000 !important;
+   font-family: Arial !important;
+}
+
+.logo-style {
+    font-size: 72px;
+    background: -webkit-linear-gradient(45deg, #e40dfb, #43fccd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-style {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#overview {
+    background-color: #FFEDFF;
+    border-left: 5px solid #E40DFB;
+}
+
+#genres {
+    background-color: #F4FFF2;
+    border-left: 5px solid #81FD6F;
+}
+
+.highlighted-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #F1FFFA;
+    border-radius: 8px;
+    border: 2px dashed #43FCCD;
+}
+
+#benefits {
+    font-weight: bold;
+}
+
+#future {
+    font-style: italic;
+}

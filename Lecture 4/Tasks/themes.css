@@ -1,0 +1,160 @@
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-card {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.theme-switcher {
+    margin: 20px;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+button {
+    background-color: #f7f7f7;
+    color: #121212;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Main Card styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Small Card styles */
+.small-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    padding: 15px;
+    margin-left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Theme-specific styles */
+
+/* Light Theme */
+body.light-theme {
+    background-color: #f2f2f2;
+    color: #121212;
+}
+
+body.light-theme .card {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.light-theme .small-card {
+    background-color: #f7f7f7;
+    color: #121212;
+}
+
+body.light-theme button {
+    background-color: #f7f7f7;
+}
+
+body.light-theme button:active {
+    background-color: #dddddd;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+body.dark-theme .card {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
+
+body.dark-theme .small-card {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+body.dark-theme button {
+    background-color: #444;
+    color: #f2f2f2;
+}
+
+body.dark-theme button:active {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+/* Colorful Theme */
+body.colorful-theme {
+    background-color: #ffbe0b;
+    color: #ff006e;
+}
+
+body.colorful-theme .card {
+    background-color: #ff1a8c;
+    color: #ffffff;
+}
+
+body.colorful-theme .small-card {
+    background-color: #3a86ff;
+    color: #ffffff;
+}
+
+body.colorful-theme button {
+    background-color: #8338ec;
+    color: #ffffff;
+}
+
+body.colorful-theme button:active {
+    background-color: #4c2580;
+    color: #ffffff;
+}
