@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-/* Flexbox-inställningar för att göra footern sticky */
+/* Flexbox to make footer sticky */
 body, html {
     height: 100%;
     width: 100%;
@@ -25,14 +25,14 @@ body, html {
 }
 
 main {
-    flex-grow: 1; /* Gör att main växer och skjuter ned footern */
+    flex-grow: 1; 
 }
 
-/* Container som centrera allt innehåll */
+/* Container to center all content */
 .container {
-    max-width: 1200px; /* Sätt maxbredd */
-    margin: 0 auto; /* Centrerar innehåll */
-    padding: 0 20px; /* Padding för att ge lite utrymme på kanterna */
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 /* Header and Navigation */
@@ -51,7 +51,7 @@ header {
 .logo img {
     width: 100px;
     height: auto;
-    transition: width 0.3s ease; /* Gör logotypen responsiv */
+    transition: width 0.3s ease; 
 }
 
 nav {
@@ -102,7 +102,7 @@ nav {
 }
 
 .hero-text {
-    max-width: 600px;
+    max-width: 450px;
 }
 
 .hero-text h1 {
@@ -208,7 +208,7 @@ footer {
     height: auto;
 }
 
-/* Media Query för responsiv design */
+/* Media Query */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -259,15 +259,15 @@ footer {
 
 @media (max-width: 480px) {
     .logo img {
-        width: 60px; /* Ännu mindre logotyp på mycket små skärmar */
+        width: 60px;
     }
 
     .nav-links li a {
-        font-size: 16px; /* Mindre textstorlek för navigeringslänkar */
+        font-size: 16px;
     }
 
     .btn-resume, .btn-linkedin {
-        padding: 8px 16px; /* Mindre padding på knappar */
+        padding: 8px 16px;
     }
 
     .hero-text h1 {
