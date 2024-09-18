@@ -42,6 +42,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -58,7 +59,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
+    flex: 2;
+    flex-wrap: wrap;
 }
 
 .nav-links {
@@ -219,14 +221,23 @@ footer {
         width: 80px;
     }
 
+    nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
     .nav-links {
         flex-direction: column;
         gap: 15px;
         margin-top: 10px;
+        align-items: center;
+        text-align: center;
     }
 
     .btn-resume {
         margin-top: 15px;
+        align-self: center;
     }
 
     .hero {
@@ -250,10 +261,15 @@ footer {
     .footer-container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .footer-links, .footer-social, .footer-contact {
         margin: 20px 0;
+    }
+
+    .footer-social ul {
+        justify-content: center;
     }
 }
 
@@ -280,5 +296,13 @@ footer {
 
     .hero-image {
         max-width: 100%;
+    }
+
+    .footer-links ul li a {
+        font-size: 16px;
+    }
+
+    .footer-social ul li img {
+        width: 25px;
     }
 }
