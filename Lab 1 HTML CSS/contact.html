@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Josefina Nord</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="personal-logotype-light.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+                <a href="#" class="btn-resume">My Resume</a>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main class="container-main">
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Contact Me</h1>
+                    <p>If you have any questions or would like to collaborate, feel free to reach out to me using the contact form below.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" action="submit-form.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="#"><img src="/Lab 1 HTML CSS/social media/1.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/Lab 1 HTML CSS/social media/2.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/Lab 1 HTML CSS/social media/3.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="/Lab 1 HTML CSS/social media/4.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Have a question? <a href="contact.html">Contact Me</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
