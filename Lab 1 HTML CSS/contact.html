@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Josefina Nord</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,31 +21,37 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
-                <a href="#" class="btn-resume">My Resume</a>
+                <a href="/Lab 1 HTML CSS/Josefina Nord CV 2024 English.pdf" target="_blank" class="btn-resume">My Resume</a>
             </nav>
         </header>
 
         <!-- Main content -->
         <main class="container-main">
             <section class="hero">
+                
                 <div class="hero-text">
                     <h1>Contact Me</h1>
                     <p>If you have any questions or would like to collaborate, feel free to reach out to me using the contact form below.</p>
-                </div>
-
-                <!-- Contact Form -->
-                <form class="contact-form" action="submit-form.php" method="POST">
+                    <!-- Contact Form -->
+                    <form class="contact-form" onsubmit="sendMail(); return false;">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
 
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
 
                     <button type="submit" class="btn-submit">Send Message</button>
                 </form>
+                </div>
+                <div class="hero-image">
+                    <img src="/Lab 1 HTML CSS/memojis/heart_tp.PNG" alt="Josefina character">
+                </div>
             </section>
         </main>
     </div>
@@ -79,6 +85,22 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function sendMail() {
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Create the mailto link
+            const mailtoLink = `mailto:nordjosefina@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0A${encodeURIComponent(message)}`;
+
+            // Redirect to the mailto link
+            window.location.href = mailtoLink;
+        }
+    </script>
 
 </body>
 </html>
