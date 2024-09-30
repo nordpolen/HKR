@@ -80,6 +80,10 @@ nav {
     color: var(--primary-color);
 }
 
+a:active {
+    color: green;
+}
+
 .btn-resume {
     background-color: var(--primary-color);
     padding: 10px 20px;
